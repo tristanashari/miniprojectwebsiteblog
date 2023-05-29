@@ -1,0 +1,709 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(93, 180, 180);
+    padding: 0 28px;
+}
+
+.navbarMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.websiteName {
+    font-family: 'Lora', serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+}
+
+.profileBtn {
+    height: 3em;
+    width: 3em;
+    border-radius: 2em;
+    background-color: grey;
+}
+
+.writeBtn {
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 24px;
+    background-color: rgb(23, 79, 182);
+    margin: 0 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+    color: white;
+}
+
+.writeBtn:hover {
+    background-color: rgb(17, 55, 126);
+}
+
+.carousel {
+    width: 900px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+.carouselStrip {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.carouselContainer {
+    width: 500px;
+    height: 500px;
+}
+
+.carouselImageContainer {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselImage {
+    width: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carouselTitle {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carouselWriterAndDate {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carouselDate {
+    color: rgba(0,0,0,0.7)
+}
+
+.articleStrip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articleCard {
+    width: 820px;
+    height: 200px;
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    'writer writer date image'
+    'title title title image'
+    'preview preview preview image'
+    'category category category image';
+    text-align: left;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.25);
+    font-family: 'Lora', serif;
+    margin: 20px 0;
+}
+
+.previewArea, .titleArea, .artCategoryArea{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 620px;
+    padding: 0 20px;
+}
+
+.writerArea {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    padding: 0 20px;
+}
+
+.dateArea {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    padding: 0 20px;
+    border-left: 1px dashed rgba(0,0,0,0.2);
+}
+
+.imageArea {
+    width: 200px;
+    height: 200px;
+    grid-area: image;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.writerArea {
+    grid-area: writer;
+}
+
+.dateArea {
+    grid-area: date;
+}
+
+.titleArea {
+    grid-area: title;
+}
+
+.previewArea {
+    grid-area: preview;
+}
+
+.artCategoryArea {
+    grid-area: category;
+}
+
+.previewArea p, .titleArea span {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.titleArea span {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.writerArea span, .dateArea span, .artCategoryArea {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+}
+
+.articleCard:hover {
+    color: rgb(17, 55, 126);
+    box-shadow: 2px 4px 8px rgba(17, 55, 126, 0.5);
+}
+
+.writerPic {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.writerArea span {
+    margin-left: 5px;
+}
+
+.artImage {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+}
+
+.catItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    width: 120px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.categories {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: 1.5px;
+}
+.categoryNav {
+    width: 900px;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(93, 180, 180);
+}
+
+.categoryNav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+.categoryNav ul li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.searchAndSortContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto;
+    height: 50px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.searchBar {
+    outline: 0;
+    width: 400px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.searchBar:active {
+    border:0px;
+    border-radius: 5px;
+}
+
+.latestBtn, .oldestBtn {
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 6px 8px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    width: 400px;
+    height: 50px;
+    justify-content: space-evenly;
+    margin: 40px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.favoriteArticle {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: flex-end;
+}
+
+.favoriteArticle span {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.seeAllLink {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0,0,0,0.1);
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.favoriteArticleCard {
+    width: 820px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.titleAreaFavArticle {
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+}
+
+.favs {
+    color: rgba(0,0,0,0.7);
+    font-family: 'Roboto', sans-serif;
+}
+
+.blogImageContainer {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogImage {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.blogTitle, .writerSection, .blogDateAndActions, .blogContent, .favBlogPageTitle {
+    width: 900px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.blogTitle span {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.writerPicBlogPage {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.7);
+    margin-right: 10px;
+}
+
+.blogWriter {
+    font-family: 'Roboto', sans-serif;
+}
+
+.blogDate {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,0.7);
+    margin-right: 10px;
+}
+
+.blogCategory {
+    width: 900px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blogActions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.blogActions button {
+    margin-right: 10px;
+    background-color: rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 8px;
+    border-radius: 5px;
+}
+
+.blogContent {
+    font-family: 'Lora', serif;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.favBlogPageTitle {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.favBlogDataContainer {
+    margin-bottom: 40px;
+}
+
+.footer {
+    width: 100%;
+    height:250px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(8, 25, 58);
+}
+
+.newsletterContainer, .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletterContainer span {
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.newsletterEmail {
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    width: 400px;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subscribeBtn {
+    background-color: rgb(23, 79, 182);
+    width: 400px;
+    border-radius: 5px;
+    padding: 6px 16px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.2px;
+}
+
+.socialPlatform {
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.socialAccount {
+    color: white;
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+
+.publishBlogContainer {
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.writeInput {
+    width: 600px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-top: 10px; 
+}
+
+.writeInput input {
+    width: 600px;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.writeContent {
+    width: 600px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.writeImage {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    width: 600px;
+    text-align: left;
+}
+
+.writeCategoryContainer {
+    width: 600px;
+    display: flex;
+    justify-content: space-between
+}
+
+.writeCategoryTitle {
+    width: 600px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.writePublish {
+    background-color: rgb(23, 79, 182);
+    width: 100px;
+    border-radius: 5px;
+    padding: 6px 16px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.2px;
+    margin: 40px auto;
+}
+
+.writeABlog {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 600px;
+}
+
+.loginTitle {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.loginEmail, .loginPassword {
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.loginInput {
+    width: 400px;
+    border: 1px solid black;
+    outline: 1px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loginBtn {
+    width: 400px;
+    color: white;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: rgb(23, 79, 182) ;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 6px 8px
+}
+
+.or {
+    width: 400px;
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signUpBtn {
+    width: 400px;
+    color: rgb(8, 25, 58);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 6px 8px
+}
+
+.deleteBtn {
+    width: 80px;
+    padding: 6px 8px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.settingsContainer button {
+    width: 80px;
+    padding: 6px 8px;
+    color: rgb(8, 25, 58);
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.myBlog {
+    width: 900px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.buttonInSettings {
+    width: 400px;
+    padding: 6px 8px;
+    color:rgb(8, 25, 58);
+    background-color: rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.logOutBtn {
+    width: 400px;
+    padding: 6px 8px;
+    color:white;
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.backToProfile {
+    width: 400px;
+    padding: 6px 8px;
+    color:white;
+    background-color: rgb(23, 79, 182);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 10px auto;
+    border-radius: 5px;
+}
